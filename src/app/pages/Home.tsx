@@ -2,7 +2,7 @@ import { useMemo } from 'preact/hooks'
 import contributors from '../../contributors.json'
 import { Store } from '../Store.js'
 import { shuffle } from '../Utils.js'
-import { Card, ChangelogEntry, Footer, GeneratorCard, Giscus, GuideCard, ToolCard, ToolGroup } from '../components/index.js'
+import { Card, ChangelogEntry, Footer, GeneratorCard, Giscus, ToolCard, ToolGroup } from '../components/index.js'
 import { WhatsNewTime } from '../components/whatsnew/WhatsNewTime.jsx'
 import { useLocale, useTitle } from '../contexts/index.js'
 import { useAsync } from '../hooks/useAsync.js'
@@ -50,10 +50,8 @@ export function Home({}: Props) {
 function PopularGenerators() {
 	const { locale } = useLocale()
 	return <ToolGroup title={locale('generators.popular')} link="/generators/">
-		<GeneratorCard minimal id="loot_table" />
-		<GeneratorCard minimal id="advancement" />
-		<GeneratorCard minimal id="predicate" />
-		<ToolCard title={locale('worldgen')} link="/worldgen/" titleIcon="worldgen" />
+		<GeneratorCard minimal id="power" />
+		<GeneratorCard minimal id="recipe" />
 		<ToolCard title={locale('generators.all')} link="/generators/" titleIcon="arrow_right" />
 	</ToolGroup>
 }
@@ -82,8 +80,6 @@ function Guides() {
 	const { locale } = useLocale()
 
 	return <ToolGroup title={locale('guides')} link="/guides/" titleIcon="arrow_right">
-		<GuideCard minimal id="adding-custom-structures" />
-		<GuideCard minimal id="noise-router" />
 	</ToolGroup>
 }
 
@@ -91,18 +87,9 @@ function Tools() {
 	const { locale } = useLocale()
 
 	return <ToolGroup title={locale('tools')}>
-		<ToolCard title="Customized Worlds" icon="customized"
-			link="/customized/"
-			desc="Create data packs to customize your world" />
 		<ToolCard title="Report Inspector" icon="report"
 			link="https://misode.github.io/report/"
 			desc="Analyse your performance reports" />
-		<ToolCard title="Minecraft Sounds" icon="sounds"
-			link="/sounds/"
-			desc="Browse through and mix all the vanilla sounds" />
-		<ToolCard title="Transformation preview"
-			link="/transformation/"
-			desc="Visualize transformations for display entities" />
 		<ToolCard title="Data Pack Upgrader"
 			link="https://misode.github.io/upgrader/"
 			desc="Convert your data packs from 1.16 to 1.20" />

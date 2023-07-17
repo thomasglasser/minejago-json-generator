@@ -171,6 +171,7 @@ export function Guide({ id }: Props) {
 
 	const [largeWidth] = useState(window.innerWidth > 600)
 
+	// @ts-ignore
 	return <main>
 		<div class="container guide">
 			<div class="navigation">

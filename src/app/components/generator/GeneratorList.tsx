@@ -20,7 +20,7 @@ export function GeneratorList({ predicate }: Props) {
 	const versionedGenerators = useMemo(() => {
 		return config.generators.filter(gen => {
 			if (predicate === undefined || !predicate(gen)) return false
-			if (versionFilter === false) return true
+			if (!versionFilter) return true
 			return checkVersion(version, gen.minVersion, gen.maxVersion)
 		})
 	}, [version, versionFilter])
