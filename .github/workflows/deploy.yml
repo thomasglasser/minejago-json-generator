@@ -12,10 +12,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: 'Get latest version'
-      id: version
-      run: echo "id=$(curl -s https://raw.githubusercontent.com/misode/mcmeta/summary/version.txt)" >> $GITHUB_OUTPUT
-
     - name: Build
       run: |
         npm install
