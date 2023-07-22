@@ -37,6 +37,7 @@ export default defineConfig({
 			{ find: 'react/jsx-runtime', replacement: 'preact/jsx-runtime' },
 		],
 	},
+	base: '/minejago-json-generator/',
 	build: {
 		sourcemap: true,
 		rollupOptions: {
