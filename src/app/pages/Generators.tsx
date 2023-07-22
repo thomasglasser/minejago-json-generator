@@ -10,7 +10,7 @@ export function Generators({}: Props) {
 
 	return <main>
 		<div class="container">
-			<GeneratorList predicate={gen => !gen.partner} />
+			<GeneratorList predicate={_ => true} />
 		</div>
 		<Footer />
 	</main>

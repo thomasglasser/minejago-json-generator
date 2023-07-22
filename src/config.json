@@ -147,6 +147,15 @@
       "minVersion": "1.19.4"
     },
     {
+      "id": "minejago_recipe",
+      "url": "minejago-recipe",
+      "path": "recipes",
+      "schema": "minejago_recipe",
+      "partner": "minejago",
+      "minVersion": "1.20",
+      "maxVersion": "1.20"
+    },
+    {
       "id": "chat_type",
       "url": "chat-type",
       "schema": "chat_type",

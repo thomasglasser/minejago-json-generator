@@ -4,7 +4,6 @@ import glob from 'fast-glob'
 import fs from 'fs'
 import yaml from 'js-yaml'
 import { env } from 'process'
-import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig } from 'vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 const config = require('./src/config.json')
@@ -83,7 +82,7 @@ export default defineConfig({
 				{ src: 'src/guides/*', dest: 'guides' },
 			],
 		}),
-		visualizer({ open: true }),
+		// visualizer({ open: true }),
 		{
 			name: 'watch-guides',
 			enforce: 'post',
@@ -99,6 +98,10 @@ export default defineConfig({
 			},
 		},
 	],
+	optimizeDeps: {
+		include: ['@mcschema/java-1.20'],
+		force: true,
+	},
 })
 
 function getVersions(m) {
