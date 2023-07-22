@@ -56,7 +56,6 @@ export function initMinejago(schemas: SchemaRegistry, collections: CollectionReg
 		is_special: Opt(BooleanNode()),
 	}, { context: `${ID}:power` }), {
 		default: () => ({
-			id: 'magic',
 		}),
 	}))
 }
