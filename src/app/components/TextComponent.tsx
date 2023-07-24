@@ -107,7 +107,7 @@ const TextColors = {
 }
 
 type TextColorKey = keyof typeof TextColors
-const TextColorKeys = Object.keys(TextColors)
+export const TextColorKeys = Object.keys(TextColors)
 
 function TextPart({ part, shadow, lang }: { part: PartData, shadow?: boolean, lang: Record<string, string> }) {
 	if (part.translate) {

@@ -3,6 +3,7 @@ import {BooleanNode, Case, ListNode, Mod, NumberNode, ObjectNode, Opt, Switch} f
 import {Reference as RawReference} from '@mcschema/core/lib/nodes/Reference.js'
 import {StringNode as RawStringNode} from '@mcschema/core/lib/nodes/StringNode.js'
 import {initTextComponentSchemas} from '@mcschema/java-1.19.4/lib/schemas/TextComponent.js';
+import {TextColorKeys} from "../components/TextComponent.js";
 
 const ID = 'minejago'
 
@@ -45,7 +46,7 @@ export function initMinejago(schemas: SchemaRegistry, collections: CollectionReg
 
 	schemas.register(`${ID}:power`, Mod(ObjectNode({
 		id: StringNode(),
-		power_color: Opt(StringNode({ enum: ['BLACK', 'DARK_BLUE', 'DARK_GREEN', 'DARK_AQUA', 'DARK_RED', 'DARK_PURPLE', 'GOLD', 'GRAY', 'DARK_GRAY', 'BLUE', 'GREEN', 'AQUA', 'RED', 'LIGHT_PURPLE', 'YELLOW', 'WHITE'] })),
+		power_color: Opt(StringNode({ enum: TextColorKeys })),
 		tagline: Opt(Reference('text_component')),
 		main_spinjitzu_color: Opt(Reference('vector_3f')),
 		alt_spinjitzu_color: Opt(Reference('vector_3f')),
