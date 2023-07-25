@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d88b5920-2d06-4677-b322-d8ab5cd3ff54" name="Changes" comment="Attempted fixing">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/TextComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/TextComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/partners/Minejago.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/partners/Minejago.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +28,6 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
-}</component>
   <component name="ProjectId" id="2SfyyRGuEflsiVMJ53Ed4JoXtfl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,22 +41,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "18.16.1",
     "javascript.nodejs.core.library.typings.version": "18.16.1",
-    "last_opened_file_path": "C:/Users/tjg1111/AppData",
+    "last_opened_file_path": "C:/Users/tjgla/WebstormProjects/minejago-schemas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
+    "nodejs_interpreter_path": "C:/Program Files/nodejs/node",
     "nodejs_package_manager_path": "C:\\Users\\tjgla\\AppData\\Roaming\\npm\\yarn.cmd",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\tjgla\\WebstormProjects\\minejago-json-generator\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,8 +73,6 @@
       <workItem from="1689579012456" duration="1328000" />
       <workItem from="1689822708345" duration="1572000" />
       <workItem from="1690029671155" duration="158000" />
-      <workItem from="1690236111278" duration="18000" />
-      <workItem from="1690236139822" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="Made json generator (WIP, very broken)">
       <option name="closed" value="true" />

@@ -46,7 +46,7 @@ export function initMinejago(schemas: SchemaRegistry, collections: CollectionReg
 
 	schemas.register(`${ID}:power`, Mod(ObjectNode({
 		id: StringNode(),
-		power_color: Opt(StringNode({ enum: TextColorKeys })),
+		power_color: Opt(StringNode({ enum: TextColorKeys, additional: true })),
 		tagline: Opt(Reference('text_component')),
 		main_spinjitzu_color: Opt(Reference('vector_3f')),
 		alt_spinjitzu_color: Opt(Reference('vector_3f')),
