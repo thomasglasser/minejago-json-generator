@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d88b5920-2d06-4677-b322-d8ab5cd3ff54" name="Changes" comment="Attempted fixing">
+    <list default="true" id="d88b5920-2d06-4677-b322-d8ab5cd3ff54" name="Changes" comment="Allowed strings in power_color for hexcodes">
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/partners/Minejago.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/partners/Minejago.ts" afterDir="false" />
@@ -73,6 +73,8 @@
       <workItem from="1689579012456" duration="1328000" />
       <workItem from="1689822708345" duration="1572000" />
       <workItem from="1690029671155" duration="158000" />
+      <workItem from="1690260296189" duration="646000" />
+      <workItem from="1690847250655" duration="4359000" />
     </task>
     <task id="LOCAL-00001" summary="Made json generator (WIP, very broken)">
       <option name="closed" value="true" />
@@ -90,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689827356926</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Allowed strings in power_color for hexcodes">
+      <option name="closed" value="true" />
+      <created>1690260927570</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690260927570</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made json generator (WIP, very broken)" />
     <MESSAGE value="Attempted fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempted fixing" />
+    <MESSAGE value="Allowed strings in power_color for hexcodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allowed strings in power_color for hexcodes" />
   </component>
 </project>

@@ -18,15 +18,18 @@ export function initMinejago(schemas: SchemaRegistry, collections: CollectionReg
 		[Switch]: [{ push: 'type' }],
 		[Case]: {
 			'minejago:teapot_brewing': {
+				group: Opt(StringNode()),
+				base: StringNode({ validator: 'resource', params: { pool: 'potion' } }),
 				ingredient: Reference('recipe_ingredient_object'),
 				result: StringNode({ validator: 'resource', params: { pool: 'potion' } }),
 				experience: Opt(NumberNode()),
-				cookingtime: Opt(Mod(NumberNode({ integer: true }), { default: () => 1200 })),
+				cookingtime: Opt(NumberNode({ integer: true })),
 			},
 		},
 	}, { context: `${ID}:minejago_recipe`, disableSwitchContext: true }), {
 		default: () => ({
 			type: 'minejago:teapot_brewing',
+			base: 'minecraft:water',
 			result: 'minejago:milk',
 		}),
 	}))
