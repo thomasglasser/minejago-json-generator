@@ -165,6 +165,15 @@
       "minVersion": "1.20"
     },
     {
+      "id": "sherd",
+      "url": "partners/sherdsapi/sherd",
+      "path": "sherds",
+      "tags": ["partners"],
+      "partner": "sherdsapi",
+      "schema": "sherdsapi:sherd",
+      "minVersion": "1.20"
+    },
+    {
       "id": "chat_type",
       "url": "chat-type",
       "schema": "chat_type",

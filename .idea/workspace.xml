@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d88b5920-2d06-4677-b322-d8ab5cd3ff54" name="Changes" comment="Allowed strings in power_color for hexcodes">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="d88b5920-2d06-4677-b322-d8ab5cd3ff54" name="Changes" comment="Updated teapot recipe format">
+      <change afterPath="$PROJECT_DIR$/src/app/partners/SherdsApi.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/partners/Minejago.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/partners/Minejago.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/partners/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/partners/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "javascript.nodejs.core.library.configured.version": "18.16.1",
     "javascript.nodejs.core.library.typings.version": "18.16.1",
     "last_opened_file_path": "C:/Users/tjgla/WebstormProjects/minejago-schemas",
@@ -74,7 +78,8 @@
       <workItem from="1689822708345" duration="1572000" />
       <workItem from="1690029671155" duration="158000" />
       <workItem from="1690260296189" duration="646000" />
-      <workItem from="1690847250655" duration="4359000" />
+      <workItem from="1690847250655" duration="4383000" />
+      <workItem from="1691817544523" duration="1732000" />
     </task>
     <task id="LOCAL-00001" summary="Made json generator (WIP, very broken)">
       <option name="closed" value="true" />
@@ -100,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690260927570</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated teapot recipe format">
+      <option name="closed" value="true" />
+      <created>1690863729030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690863729030</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +134,7 @@
     <MESSAGE value="Made json generator (WIP, very broken)" />
     <MESSAGE value="Attempted fixing" />
     <MESSAGE value="Allowed strings in power_color for hexcodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allowed strings in power_color for hexcodes" />
+    <MESSAGE value="Updated teapot recipe format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated teapot recipe format" />
   </component>
 </project>
