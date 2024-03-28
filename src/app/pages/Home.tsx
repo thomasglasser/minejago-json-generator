@@ -53,6 +53,7 @@ function PopularGenerators() {
 		<GeneratorCard minimal id="power" />
 		<GeneratorCard minimal id="minejago_recipe" />
 		<GeneratorCard minimal id="sherd" />
+		<GeneratorCard minimal id="sherd-4.x" />
 		<ToolCard title={locale('generators.all')} link="/generators/" titleIcon="arrow_right" />
 	</ToolGroup>
 }
