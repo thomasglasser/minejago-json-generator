@@ -5,10 +5,10 @@ import { message } from '../Utils.js'
 import { initPartners } from '../partners/index.js'
 import { fetchData } from './DataFetcher.js'
 
-export const VersionIds = ['1.15', '1.16', '1.17', '1.18', '1.18.2', '1.19', '1.19.3', '1.19.4', '1.20'] as const
+export const VersionIds = ['1.15', '1.16', '1.17', '1.18', '1.18.2', '1.19', '1.19.3', '1.19.4', '1.20', '1.20.4'] as const
 export type VersionId = typeof VersionIds[number]
 
-export const DEFAULT_VERSION: VersionId = '1.20'
+export const DEFAULT_VERSION: VersionId = '1.20.4'
 
 export type BlockStateRegistry = {
 	[block: string]: {
@@ -34,6 +34,7 @@ type ModelData = {
 }
 const Models: Record<string, ModelData> = {}
 
+// @ts-ignore
 const versionGetter: {
 	[versionId in VersionId]: () => Promise<{
 		getCollections: () => CollectionRegistry,
@@ -49,6 +50,7 @@ const versionGetter: {
 	'1.19.3': () => import('@mcschema/java-1.19.3'),
 	'1.19.4': () => import('@mcschema/java-1.19.4'),
 	'1.20': () => import('@mcschema/java-1.20'),
+	'1.20.4': () => import('@mcschema/java-1.20.3'),
 }
 
 export let CachedDecorator: INode<any>
@@ -80,7 +82,7 @@ async function getVersion(id: VersionId): Promise<VersionData> {
 export async function getModel(version: VersionId, id: string): Promise<DataModel> {
 	if (!Models[id] || Models[id].version !== version) {
 		const versionData = await getVersion(version)
-		
+
 		CachedDecorator = Reference(versionData.schemas, 'configured_decorator')
 		CachedFeature = ChoiceNode([
 			{
